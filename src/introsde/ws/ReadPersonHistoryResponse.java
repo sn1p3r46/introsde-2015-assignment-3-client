@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{http://ws.introsde/}healthMeasureHistory" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://ws.introsde/}measure" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
 public class ReadPersonHistoryResponse {
 
     @XmlElement(name = "return")
-    protected List<HealthMeasureHistory> _return;
+    protected List<Measure> _return;
 
     /**
      * Gets the value of the return property.
@@ -55,13 +55,13 @@ public class ReadPersonHistoryResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link HealthMeasureHistory }
+     * {@link Measure }
      * 
      * 
      */
-    public List<HealthMeasureHistory> getReturn() {
+    public List<Measure> getReturn() {
         if (_return == null) {
-            _return = new ArrayList<HealthMeasureHistory>();
+            _return = new ArrayList<Measure>();
         }
         return this._return;
     }

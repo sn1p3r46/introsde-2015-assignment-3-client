@@ -99,14 +99,14 @@ public interface HealthServiceInterface {
      * @param arg1
      * @param arg0
      * @return
-     *     returns java.util.List<introsde.ws.HealthMeasureHistory>
+     *     returns java.util.List<introsde.ws.Measure>
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "readPersonHistory", targetNamespace = "http://ws.introsde/", className = "introsde.ws.ReadPersonHistory")
     @ResponseWrapper(localName = "readPersonHistoryResponse", targetNamespace = "http://ws.introsde/", className = "introsde.ws.ReadPersonHistoryResponse")
     @Action(input = "http://ws.introsde/HealthServiceInterface/readPersonHistoryRequest", output = "http://ws.introsde/HealthServiceInterface/readPersonHistoryResponse")
-    public List<HealthMeasureHistory> readPersonHistory(
+    public List<Measure> readPersonHistory(
         @WebParam(name = "arg0", targetNamespace = "")
         Long arg0,
         @WebParam(name = "arg1", targetNamespace = "")
@@ -130,14 +130,14 @@ public interface HealthServiceInterface {
      * @param arg1
      * @param arg0
      * @return
-     *     returns introsde.ws.HealthMeasureHistory
+     *     returns introsde.ws.Measure
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "readPersonMeasure", targetNamespace = "http://ws.introsde/", className = "introsde.ws.ReadPersonMeasure")
     @ResponseWrapper(localName = "readPersonMeasureResponse", targetNamespace = "http://ws.introsde/", className = "introsde.ws.ReadPersonMeasureResponse")
     @Action(input = "http://ws.introsde/HealthServiceInterface/readPersonMeasureRequest", output = "http://ws.introsde/HealthServiceInterface/readPersonMeasureResponse")
-    public HealthMeasureHistory readPersonMeasure(
+    public Measure readPersonMeasure(
         @WebParam(name = "arg0", targetNamespace = "")
         Long arg0,
         @WebParam(name = "arg1", targetNamespace = "")
@@ -150,35 +150,35 @@ public interface HealthServiceInterface {
      * @param arg1
      * @param arg0
      * @return
-     *     returns introsde.ws.HealthMeasureHistory
+     *     returns introsde.ws.Measure
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "savePersonMeasure", targetNamespace = "http://ws.introsde/", className = "introsde.ws.SavePersonMeasure")
     @ResponseWrapper(localName = "savePersonMeasureResponse", targetNamespace = "http://ws.introsde/", className = "introsde.ws.SavePersonMeasureResponse")
     @Action(input = "http://ws.introsde/HealthServiceInterface/savePersonMeasureRequest", output = "http://ws.introsde/HealthServiceInterface/savePersonMeasureResponse")
-    public HealthMeasureHistory savePersonMeasure(
+    public Measure savePersonMeasure(
         @WebParam(name = "arg0", targetNamespace = "")
         Long arg0,
         @WebParam(name = "arg1", targetNamespace = "")
-        HealthMeasureHistory arg1);
+        Measure arg1);
 
     /**
      * 
      * @param arg1
      * @param arg0
      * @return
-     *     returns introsde.ws.HealthMeasureHistory
+     *     returns introsde.ws.Measure
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "updatePersonMeasure", targetNamespace = "http://ws.introsde/", className = "introsde.ws.UpdatePersonMeasure")
     @ResponseWrapper(localName = "updatePersonMeasureResponse", targetNamespace = "http://ws.introsde/", className = "introsde.ws.UpdatePersonMeasureResponse")
     @Action(input = "http://ws.introsde/HealthServiceInterface/updatePersonMeasureRequest", output = "http://ws.introsde/HealthServiceInterface/updatePersonMeasureResponse")
-    public HealthMeasureHistory updatePersonMeasure(
+    public Measure updatePersonMeasure(
         @WebParam(name = "arg0", targetNamespace = "")
         Long arg0,
         @WebParam(name = "arg1", targetNamespace = "")
-        HealthMeasureHistory arg1);
+        Measure arg1);
 
 }

@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="arg1" type="{http://ws.introsde/}healthMeasureHistory" minOccurs="0"/>
+ *         &lt;element name="arg1" type="{http://ws.introsde/}measure" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -34,7 +34,7 @@ import javax.xml.bind.annotation.XmlType;
 public class SavePersonMeasure {
 
     protected Long arg0;
-    protected HealthMeasureHistory arg1;
+    protected Measure arg1;
 
     /**
      * Gets the value of the arg0 property.
@@ -65,10 +65,10 @@ public class SavePersonMeasure {
      * 
      * @return
      *     possible object is
-     *     {@link HealthMeasureHistory }
+     *     {@link Measure }
      *     
      */
-    public HealthMeasureHistory getArg1() {
+    public Measure getArg1() {
         return arg1;
     }
 
@@ -77,10 +77,10 @@ public class SavePersonMeasure {
      * 
      * @param value
      *     allowed object is
-     *     {@link HealthMeasureHistory }
+     *     {@link Measure }
      *     
      */
-    public void setArg1(HealthMeasureHistory value) {
+    public void setArg1(Measure value) {
         this.arg1 = value;
     }
 

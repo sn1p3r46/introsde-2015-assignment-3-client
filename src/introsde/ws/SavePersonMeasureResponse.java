@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{http://ws.introsde/}healthMeasureHistory" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://ws.introsde/}measure" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,17 +33,17 @@ import javax.xml.bind.annotation.XmlType;
 public class SavePersonMeasureResponse {
 
     @XmlElement(name = "return")
-    protected HealthMeasureHistory _return;
+    protected Measure _return;
 
     /**
      * Gets the value of the return property.
      * 
      * @return
      *     possible object is
-     *     {@link HealthMeasureHistory }
+     *     {@link Measure }
      *     
      */
-    public HealthMeasureHistory getReturn() {
+    public Measure getReturn() {
         return _return;
     }
 
@@ -52,10 +52,10 @@ public class SavePersonMeasureResponse {
      * 
      * @param value
      *     allowed object is
-     *     {@link HealthMeasureHistory }
+     *     {@link Measure }
      *     
      */
-    public void setReturn(HealthMeasureHistory value) {
+    public void setReturn(Measure value) {
         this._return = value;
     }
 

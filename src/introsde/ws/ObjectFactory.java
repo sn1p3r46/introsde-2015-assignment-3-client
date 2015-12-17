@@ -213,19 +213,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link HealthMeasureHistory }
+     * Create an instance of {@link CurrentHealth }
      * 
      */
-    public HealthMeasureHistory createHealthMeasureHistory() {
-        return new HealthMeasureHistory();
-    }
-
-    /**
-     * Create an instance of {@link LifeStatus }
-     * 
-     */
-    public LifeStatus createLifeStatus() {
-        return new LifeStatus();
+    public CurrentHealth createCurrentHealth() {
+        return new CurrentHealth();
     }
 
     /**
@@ -234,6 +226,14 @@ public class ObjectFactory {
      */
     public MeasureDefinition createMeasureDefinition() {
         return new MeasureDefinition();
+    }
+
+    /**
+     * Create an instance of {@link Measure }
+     * 
+     */
+    public Measure createMeasure() {
+        return new Measure();
     }
 
     /**

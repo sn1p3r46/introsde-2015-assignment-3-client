@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import java.util.Calendar;
-import javax.xml.bind.annotation.XmlTransient;
 import java.util.GregorianCalendar;
 import javax.xml.datatype.DatatypeFactory;
 
@@ -27,10 +26,11 @@ import javax.xml.datatype.DatatypeFactory;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="birthday" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+ *         &lt;element name="currentHealth" type="{http://ws.introsde/}currentHealth" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="firstname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="idPerson" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="lastname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="lifeStatus" type="{http://ws.introsde/}lifeStatus" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="measure" type="{http://ws.introsde/}measure" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -42,20 +42,23 @@ import javax.xml.datatype.DatatypeFactory;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "person", propOrder = {
     "birthday",
+    "currentHealth",
     "firstname",
     "idPerson",
     "lastname",
-    "lifeStatus"
+    "measure"
 })
 public class Person {
 
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar birthday;
+    @XmlElement(nillable = true)
+    protected List<CurrentHealth> currentHealth;
     protected String firstname;
     protected int idPerson;
     protected String lastname;
     @XmlElement(nillable = true)
-    protected List<LifeStatus> lifeStatus;
+    protected List<Measure> measure;
 
     /**
      * Gets the value of the birthday property.
@@ -93,6 +96,35 @@ public class Person {
 }
 
     /**
+     * Gets the value of the currentHealth property.
+     *
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the currentHealth property.
+     *
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getCurrentHealth().add(newItem);
+     * </pre>
+     *
+     *
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link CurrentHealth }
+     *
+     *
+     */
+    public List<CurrentHealth> getCurrentHealth() {
+        if (currentHealth == null) {
+            currentHealth = new ArrayList<CurrentHealth>();
+        }
+        return this.currentHealth;
+    }
+
+    /**
      * Gets the value of the firstname property.
      *
      * @return
@@ -112,7 +144,6 @@ public class Person {
      *     {@link String }
      *
      */
-
     public void setFirstname(String value) {
         this.firstname = value;
     }
@@ -158,33 +189,32 @@ public class Person {
     }
 
     /**
-     * Gets the value of the lifeStatus property.
+     * Gets the value of the measure property.
      *
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the lifeStatus property.
+     * This is why there is not a <CODE>set</CODE> method for the measure property.
      *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getLifeStatus().add(newItem);
+     *    getMeasure().add(newItem);
      * </pre>
      *
      *
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link LifeStatus }
+     * {@link Measure }
      *
      *
      */
-    //@XmlTransient
-    public List<LifeStatus> getLifeStatus() {
-        if (lifeStatus == null) {
-            lifeStatus = new ArrayList<LifeStatus>();
+    public List<Measure> getMeasure() {
+        if (measure == null) {
+            measure = new ArrayList<Measure>();
         }
-        return this.lifeStatus;
+        return this.measure;
     }
 
 }
