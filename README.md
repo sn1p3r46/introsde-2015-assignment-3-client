@@ -1,7 +1,7 @@
 
 # Introsde-2015-assignment-3-client
 
-This project defines a client for connecting to and using a SOAP web service defined here ([introsde-assignment-3](https://github.com/sn1p3r46/introsde-2015-assignment-3)).
+This project implements a client to connect and invoke some methods on a server using a SOAP web service here the repo: ([introsde-assignment-3](https://github.com/sn1p3r46/introsde-2015-assignment-3)).
 
 This client is developed to perform the requests on the server project. All the client server interactions make use of the [SOAP](https://en.wikipedia.org/wiki/SOAP)  ([w3c](http://www.w3schools.com/xml/xml_soap.asp)) protocol.
 
