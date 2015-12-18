@@ -8,7 +8,7 @@
 **Course** [Introduction to Service Design and Engineering](https://sites.google.com/site/introsdeunitn/)
 
 <p align="center">
-  <img src="http://www.cliparthut.com/clip-arts/512/cartoon-soap-bar-512266.png" width="200">
+  <img src="images/soap.png" width="200">
 </p>
 
 
@@ -49,3 +49,7 @@ This will install the missing dependencies, compile, and execute the program. Th
 `PLEASE:  If you are running the server locally MIND to change the server address and launch the server application and before running the client`
 
 The URI of the server is hard coded in `src/introsde/ws/HealthServiceImplementationService.java` file.
+
+<p align="center">
+  <img src="images/LogoUniTn.png" width="300">
+</p>
