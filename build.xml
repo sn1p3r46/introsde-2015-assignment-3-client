@@ -122,9 +122,9 @@
                 </fileset>
             </copy>
         </target>
-        <target name="start.test">
-            <echo message="app start introsde.Test in ${build.dir}" />
-            <java classname="introsde.Test" classpath="${build.dir}" fork="true">
+        <target name="start" depends="install, compile">
+            <echo message="app start introsde.client.HealthServiceClient in ${build.dir}" />
+            <java classname="introsde.client.HealthServiceClient" classpath="${build.dir}" fork="true">
                 <arg value="$JAVA_OPTS  -cp" />
                 <classpath>
                     <path location="build" />
