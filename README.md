@@ -34,6 +34,6 @@ ant start.client
 
 This will install the missing dependencies, compile, and execute the program. The output will be save to `client.log`.
 
-`PLEASE: Mind to start the server and change the server address before running the client if you are running it locally`
+`"PLEASE:  If you are running the server locally MIND change the server address and launch the server application and before running the client"`
 
 The URI of the server is hard coded in `src/introsde/ws/HealthServiceImplementationService.java` file.
