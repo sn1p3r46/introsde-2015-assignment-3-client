@@ -8,7 +8,7 @@
 **Course** [Introduction to Service Design and Engineering](https://sites.google.com/site/introsdeunitn/)
 
 <p align="center">
-  <img src="https://lh5.googleusercontent.com/zNOrV6pkBTazzwZzSOLd4CX0QbpeLwOjyRBdiyMMq52j8OhoMx2atiwkVA3U2yPkwx_VLkKm4RwG4t0_fS7tBNec2lc04w9fliFyrKplBpowjThtu-IZtvqX" width="300">
+  <img src="https://lh5.googleusercontent.com/zNOrV6pkBTazzwZzSOLd4CX0QbpeLwOjyRBdiyMMq52j8OhoMx2atiwkVA3U2yPkwx_VLkKm4RwG4t0_fS7tBNec2lc04w9fliFyrKplBpowjThtu-IZtvqX" width="400">
 </p>
 
 
