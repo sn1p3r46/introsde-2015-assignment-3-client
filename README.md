@@ -8,7 +8,7 @@
 **Course** [Introduction to Service Design and Engineering](https://sites.google.com/site/introsdeunitn/)
 
 <p align="center">
-  <img src="images/soap.png" width="200">
+  <img src="https://lh5.googleusercontent.com/zNOrV6pkBTazzwZzSOLd4CX0QbpeLwOjyRBdiyMMq52j8OhoMx2atiwkVA3U2yPkwx_VLkKm4RwG4t0_fS7tBNec2lc04w9fliFyrKplBpowjThtu-IZtvqX" width="300">
 </p>
 
 
@@ -53,5 +53,5 @@ The URI of the server is hard coded in `src/introsde/ws/HealthServiceImplementat
 
 
 <p align="center">
-  <img src="images/LogoUniTn.png" width="300">
+  <img src="https://raw.githubusercontent.com/sn1p3r46/introsde-2015-assignment-3-client/master/images/LogoUniTn.png" width="300">
 </p>
