@@ -1,0 +1,230 @@
+Buildfile: /home/alexander/Documents/unitn/introSDE/assignments/introsde-2015-assignment-3-client/build.xml
+
+start.client:
+     [echo] app start introsde.client.HealthServiceClient in build
+     [java] 
+     [java] INTRO SDE:	 Assignment 3
+     [java] STUDENT:	 Andrea Galloni
+     [java] 
+     [java] E-MAIL:	 andrea[dot]galloni[at]studenti[dot]unitn[dot]it
+     [java] 
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 1 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: readPersonList()  || 
+     [java] 
+     [java] 
+     [java] PID: 1
+     [java] NAME: Andrea
+     [java] SURNAME: galloni
+     [java] BIRTHADAY: 1992-12-30T00:00:00+01:00
+     [java] 
+     [java] 	***CurrentHealth***
+     [java] 
+     [java] 	MEASURE TYPE: height
+     [java] 	MEASURE VALUE: 140
+     [java] 	MEASURE DATE: 1997-06-12T02:00:00+02:00
+     [java] 
+     [java] 	MEASURE TYPE: weight
+     [java] 	MEASURE VALUE: 67
+     [java] 	MEASURE DATE: 1997-03-10T01:00:00+01:00
+     [java] 
+     [java] PID: 2
+     [java] NAME: Edoardo
+     [java] SURNAME: galloni
+     [java] BIRTHADAY: 1986-07-03T02:00:00+02:00
+     [java] 
+     [java] 	***CurrentHealth***
+     [java] 
+     [java] 	MEASURE TYPE: height
+     [java] 	MEASURE VALUE: 770
+     [java] 	MEASURE DATE: 1999-12-12T01:00:00+01:00
+     [java] 
+     [java] 	MEASURE TYPE: weight
+     [java] 	MEASURE VALUE: 77
+     [java] 	MEASURE DATE: 1998-12-12T01:00:00+01:00
+     [java] 
+     [java] PID: 3
+     [java] NAME: Guido
+     [java] SURNAME: galloni
+     [java] BIRTHADAY: 1954-07-12T01:00:00+01:00
+     [java] 
+     [java] PID: 4
+     [java] NAME: Giacomo
+     [java] SURNAME: Mene
+     [java] BIRTHADAY: 1994-06-12T02:00:00+02:00
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 2 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: readPerson(1L)  || 
+     [java] 
+     [java] 
+     [java] PID: 1
+     [java] NAME: Andrea
+     [java] SURNAME: galloni
+     [java] BIRTHADAY: 1992-12-30T00:00:00+01:00
+     [java] 
+     [java] 	***CurrentHealth***
+     [java] 
+     [java] 	MEASURE TYPE: height
+     [java] 	MEASURE VALUE: 140
+     [java] 	MEASURE DATE: 1997-06-12T02:00:00+02:00
+     [java] 
+     [java] 	MEASURE TYPE: weight
+     [java] 	MEASURE VALUE: 67
+     [java] 	MEASURE DATE: 1997-03-10T01:00:00+01:00
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 3 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: updatePerson(1L)  || 
+     [java] 
+     [java] PERSON BEFORE UPDATING:
+     [java] 
+     [java] PID: 1
+     [java] NAME: Andrea
+     [java] SURNAME: galloni
+     [java] BIRTHADAY: 1992-12-30T00:00:00+01:00
+     [java] PERSON AFTER UPDATING:
+     [java] 
+     [java] PID: 1
+     [java] NAME: aerdnA
+     [java] SURNAME: inollag
+     [java] BIRTHADAY: 1992-12-30T00:00:00+01:00
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 4 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: createPerson(p)  || 
+     [java] 
+     [java] 
+     [java] ==>[ PERSON CREATED ]: 
+     [java] 
+     [java] PID: 5
+     [java] NAME: Mario
+     [java] SURNAME: Marioni
+     [java] BIRTHADAY: 1992-12-30T18:46:42.705+01:00
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 5 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: removePerson(5)  || 
+     [java] 
+     [java] PERSON with id 5 not null proceeding with deleting...
+     [java] 
+     [java] ==>[ PERSON DELETED ]
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 6 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: readPersonHistory(1L,height)  || 
+     [java] 
+     [java] PERSON FULL NAME: aerdnA inollag
+     [java] 
+     [java] MEASURE TYPE: height
+     [java] 
+     [java] MID: 1
+     [java] VALUE: 55
+     [java] TIMESTAMP: 1995-06-12T02:00:00+02:00
+     [java] 
+     [java] MID: 2
+     [java] VALUE: 110
+     [java] TIMESTAMP: 1996-06-12T02:00:00+02:00
+     [java] 
+     [java] MID: 3
+     [java] VALUE: 140
+     [java] TIMESTAMP: 1997-06-12T02:00:00+02:00
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 7 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: readMeasureTypes()  || 
+     [java] 
+     [java] 
+     [java] MEASURE TYPE:	height
+     [java] MEASURE VALUE TYPE:	integer
+     [java] 
+     [java] MEASURE TYPE:	weight
+     [java] MEASURE VALUE TYPE:	double
+     [java] 
+     [java] MEASURE TYPE:	bmi
+     [java] MEASURE VALUE TYPE:	double
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 8 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: readPersonMeasure(1L,height,1L)  || 
+     [java] 
+     [java] 2 7
+     [java] MID:7
+     [java] MEASURE NAME: height
+     [java] VALUE: 220
+     [java] TIMESTAMP: 1997-12-12T01:00:00+01:00
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 9 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: savePersonMeasure(1L, Measure)  || 
+     [java] 
+     [java] 
+     [java] MEASURE CREATED:
+     [java] 
+     [java] MID: 13
+     [java] TIMESTAMP: 2015-12-18T18:46:43.371+01:00
+     [java] MEASURENAME: height
+     [java] VALUE: 122
+     [java] 
+     [java] ############################################
+     [java] 
+     [java] 			##############
+     [java] 			## METHOD 10 ##
+     [java] 			##############
+     [java] 
+     [java] 	 ||  FUNCTION: updatePersonMeasure(1L, Measure)  || 
+     [java] 
+     [java] ID PERSON: 1
+     [java] MID: 13
+     [java] MEASURE TYPE: height
+     [java] OLD TIMESTAMP: 2015-12-18T18:46:43.371+01:00
+     [java] OLD VALUE: 122
+     [java] 
+     [java] ==>VALUES UPDATED:
+     [java] ID PERSON: 1
+     [java] MID: 13
+     [java] MEASURE TYPE: height
+     [java] NEW TIMESTAMP: 1921-02-12T18:46:43.461+01:00
+     [java] NEW VALUE: 01221
+     [java] 
+     [java]  [   CLIENT EXECUTION ENDED THANKYOU! ;)   ]  
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
