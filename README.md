@@ -1,11 +1,21 @@
 
-# Introsde-2015-assignment-3-client
+# Introsde 2015 Assignment 3 (client part)
+
+**Student:** Andrea Galloni
+
+**Organization:** [UniTN](http://www.unitn.it/en)
+
+**Course** [Introduction to Service Design and Engineering](https://sites.google.com/site/introsdeunitn/)
+
+<p align="center">
+  <img src="http://www.cliparthut.com/clip-arts/512/cartoon-soap-bar-512266.png" width="200">
+</p>
+
 
 This project implements a client to connect and invoke some methods on a server using a SOAP web service here the repo: ([introsde-assignment-3](https://github.com/sn1p3r46/introsde-2015-assignment-3)).
 
 This client is developed to perform the requests on the server project. All the client server interactions make use of the [SOAP](https://en.wikipedia.org/wiki/SOAP)  ([w3c](http://www.w3schools.com/xml/xml_soap.asp)) protocol.
 
-The class
 
 ##Package Structure
 
