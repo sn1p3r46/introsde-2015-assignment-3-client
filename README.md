@@ -3,9 +3,12 @@
 
 **Student:** Andrea Galloni ([Twitter](https://twitter.com/andreagalloni92))
 
+**E-Mail:** andrea [dot] galloni [at] studenti [dot] unitn [dot] it
+
 **Organization:** [UniTN](http://www.unitn.it/en)
 
-**Course** [Introduction to Service Design and Engineering](https://sites.google.com/site/introsdeunitn/)
+**Course:** [Introduction to Service Design and Engineering](https://sites.google.com/site/introsdeunitn/)
+
 
 <p align="center">
   <img src="images/soap.png" width="300">
@@ -53,5 +56,5 @@ The URI of the server is hard coded in `src/introsde/ws/HealthServiceImplementat
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sn1p3r46/introsde-2015-assignment-3-client/master/images/LogoUniTn.png" width="300">
+  <img src="images/LogoUniTn.png" width="300">
 </p>
