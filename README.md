@@ -42,16 +42,20 @@ The project contains some additional files.
 
 `Client_logs.log`: is the output of the client when I ran it before pushing. (proof that it worked once :D)
 
+`build.xml`: this file ran by [Apache Ant](http://ant.apache.org/). It will download all the required dependencies using [Apache Ivy](http://ant.apache.org/ivy/). It will also download [Ivy](http://ant.apache.org/ivy/) if it is not installed.
+
+`ivy.xml`: this file contains all libraries version and names that are needed to run the server those libraries will be downloaded by [Apache Ivy](http://ant.apache.org/ivy/).
+
 ## Execution
 
-This project contains a `build.xml` file which can be run by `ant`. It will download `Apache Ivy`, this latter component will download all required dependencies from the [Maven repository](http://search.maven.org/).
+This project contains a `build.xml` file which can be run by [Apache Ant](http://ant.apache.org/). It will download [Apache Ivy](http://ant.apache.org/ivy/), this latter component will download all required dependencies from the [Maven repository](http://search.maven.org/).
 
 To execute the client run:
 ```
 ant start
 ```
 
-This will install the missing dependencies, compile, and execute the program. The output will be save to `client.log`.
+This command will install the missing dependencies, compile, and execute the program. The output will be save to `client.log`.
 
 `PLEASE:  If you are running the server locally MIND to change the server address and launch the server application and before running the client`
 
