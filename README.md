@@ -53,8 +53,19 @@ This will install the missing dependencies, compile, and execute the program. Th
 
 The URI of the server is hard coded in `src/introsde/ws/HealthServiceImplementationService.java` file.
 
+<p align="center">
+  <br/><b><a href="https://atom.io/">Editor Used:</a></b><br/>
+  <a href="https://atom.io/">
+  <img src="https://cloud.githubusercontent.com/assets/72919/2874231/3af1db48-d3dd-11e3-98dc-6066f8bc766f.png" width="200">
+  </a>
+</p>
+
+
+## .
 
 
 <p align="center">
-  <img src="images/LogoUniTn.png" width="300">
+  <a href="http://unitn.it/en">
+  <img src="https://raw.githubusercontent.com/sn1p3r46/introsde-2015-assignment-3-client/master/images/LogoUniTn.png" width="300">
+  </a>
 </p>
