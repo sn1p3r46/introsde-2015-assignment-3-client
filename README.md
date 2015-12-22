@@ -19,6 +19,10 @@ This project implements a client to connect and invoke some methods on a server 
 
 This client is developed to perform the requests on the server project. All the client server interactions make use of the [SOAP](https://en.wikipedia.org/wiki/SOAP)  ([w3c](http://www.w3schools.com/xml/xml_soap.asp)) protocol.
 
+<p align="center">
+  <img src="images/soapModel.gif" width="350">
+</p>
+
 ## Requirements:
 `Apache Ant, OpenJDK, JRE and an Internet Connection;`
 
